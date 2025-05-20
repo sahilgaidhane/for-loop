@@ -1,0 +1,9 @@
+# Lists to store product names and stock levels
+product_names = ["Apples", "Bananas", "Oranges", "Pears", "Grapes"]
+stock_levels = [20, 50, 15, 5, 8]
+
+minimum_stock = 10  # Minimum stock before reordering
+
+for product,stock in zip(product_names,stock_levels):
+    if stock < minimum_stock :
+        print(f"product {product} is less than minimun stock {minimum_stock} ")
